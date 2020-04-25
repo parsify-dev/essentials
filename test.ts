@@ -1,15 +1,23 @@
 import test from 'ava';
 
-import parsifyExamplePlugin from './src';
+import {units, bin, oct, hex, sci} from './src';
 
-test('general', async t => {
-	t.is(await parsifyExamplePlugin()('hello'), 'hello world!');
+test('units', t => {
+	t.is(typeof units, 'object');
 });
 
-test('with options', async t => {
-	t.is(await parsifyExamplePlugin({upperCase: true})('hello'), 'HELLO WORLD!');
+test('binary', t => {
+	t.is(bin(100), '1100100');
 });
 
-test('if an error occurs, just output the expression', async t => {
-	t.is(await parsifyExamplePlugin()('foo / bar'), 'foo / bar');
+test('octal', t => {
+	t.is(oct(100), '144');
+});
+
+test('hexadecimal', t => {
+	t.is(hex(100), '64');
+});
+
+test('scientific', t => {
+	t.is(sci(100), '1e+2');
 });
