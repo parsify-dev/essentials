@@ -18,5 +18,10 @@ export default {
 	horsepower: {
 		definition: '0.7457 kilowatt',
 		aliases: ['hp']
+	},
+	// Base currency
+	EUR: {
+		definition: '1',
+		aliases: ['eur', 'Euro', '€']
 	}
 };
