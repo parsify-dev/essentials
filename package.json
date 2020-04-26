@@ -1,6 +1,6 @@
 {
     "name": "@parsify/essentials",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Pack of essential units & functions for Parsify",
     "main": "dist/index.js",
     "module": "dist/index.esm.js",
