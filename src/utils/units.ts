@@ -1,4 +1,4 @@
-export default {
+const units = {
 	// CSS units
 	pixel: {
 		definition: '0.026458333 cm',
@@ -20,8 +20,10 @@ export default {
 		aliases: ['hp']
 	},
 	// Base currency
-	EUR: {
+	USD: {
 		definition: '1',
-		aliases: ['eur', 'Euro', '€']
+		aliases: ['usd', '$']
 	}
 };
+
+export default units;
